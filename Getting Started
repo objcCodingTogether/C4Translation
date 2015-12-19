@@ -1,0 +1,52 @@
+Let's build COSMOS[让我们一起构建COSMOS]
+
+Learn by doing with our C4-powered app-building tutorial.[跟着我们的基于C4的应用构建教程，边学边做！] Let us walk you through the process of how we built a nice little iOS app called COSMOS.[我们将全程向您展示我们是怎么构建一个小而美的iOS应用——COSMOS的。]
+
+INTRO[简介]
+Getting Started[启程]
+
+Get up and running quickly with the COSMOS Xcode project files.[用COSMOS Xcode 项目文件快速启动和运行。]
+
+
+I’ve created an almost empty project for you to work with throughout the COSMOS tutorial. [我已经为你创建了一个基本上是空项目的，以便于你在本教程中全程使用。] This is an Xcode project that has empty classes into which you’ll add code, all the assets (including audio files), and a local version of C4.[这是一个Xcode 项目，包含了一些空的类（你将会向这些类里面添加代码）、所有的资源文件（包括音频文件）以及一个本地版本的C4。]
+
+
+COSMOS Xcode Project[COSMOS Xcode项目]
+An empty project for you to work in.[一个空项目，你将基于此来开始。]
+Download[下载]
+
+Let’s have a look at how things are structured.[让我们看看这些东西是怎么组织的。]
+
+Open the project now.[先打开项目。]
+
+Project Navigator[项目导航]
+With the project open in Xcode, you’ll see something that looks like this, on the left-hand side of the window:[在Xcode打开项目后，你在窗口的左手边的会看到像这样的一些东西：]
+
+
+This is the project navigator and it allows you to order, search and navigate all the files in your project.[这称作项目导航，它可以让你对你的项目中的所有文件进行排序、搜索、导航。]
+
+Swift Files[Swift文件]
+There are 7 swift files:[一共有7个swift文件：]
+
+AppDelegate
+ViewController
+Menu
+ParallaxBackground
+AstrologicalSignProvider
+InfiniteScrollview
+InfoPanel
+Of these, you won’t be touching the AppDelegate, but you will be working fairly extensively with all the other projects.
+[在这些文件中，你将不会触碰到AppDelegate文件，但你将会紧密工作在所有其他的文件周围。]
+
+Throughout the tutorial each of the chapters will specify which file you need to code into. For example, in the Infinite Scrollview chapter all your code will go into the InfiniteScrollview.swift file.[整个教程的每一章都会明确指定你需要添加代码的文件。比如说：在《无限的ScrollView》一章，你所有的代码都将加到InfiniteScrollview.swift文件里面。]
+
+Assets[资源文件]
+There are 2 types of assets: visual and audio. The audio files are kept in a group and are all mp3 files. The visual assets are all contained within an Assets.xcassets group and organized as image sets where each “image” is actually made up of 2x and 3x versions.[项目中有两类资源文件：视觉素材和音频。音频文件通通放在一个组里面，它们都是mp3文件。视觉素材则放在一个叫Assets.xcassets 的组里面，它们被组织成一个图片集——每张”图片“都由2x和3x的版本组成。]
+
+C4[C4]
+In this project I’ve included static copies of all the C4 files. Typically this is NOT how you’ll use C4, but for this tutorial organizing things this way makes sure that the code we’re writing today will be consistent with the way C4 exists at the time of writing this tutorial.[在这个项目里面，我已经包含了所有C4文件的一个静态的拷贝。但这并不是你使用C4的正确姿势，只是为了这篇教程而使用这种方式组织，以保证我们现在所写的代码与我们写这篇教程时的C4的方式是一致的。]
+
+NOTE: The difference in embedding C4 the way we’ve done vs. the other way where we embed an C4 Xcode project is nominal. Both end up having the same effect, except that in the latter it’s possible to update the project to stay current with any new releases that are pushed the the main Github repo.[注意：我们教程中嵌入C4的方式和其他嵌入C4的Xcode项目的方式的差别是微不足道的。两种方式都可以达到相同的效果。唯一的区别是后面这种方式可以从Github中更新项目到最新的版本。]
+
+You shouldn’t need to access the C4 files at any point throughout the tutorial, but they’re there for you to look at if you have any interest in digging in to see what’s happening at a lower level.
+[你在整个教程中并不会访问任何的C4文件，但是如果你有兴趣想一窥底层的究竟，它们就静静呆在哪儿等你深挖。]
